@@ -90,7 +90,7 @@
   function initWhatsapp() {
     // Renseignez ici le numéro WhatsApp au format international, sans + ni espaces.
     const whatsappNumber = '22898855085'; // TODO: à remplacer par le numéro réel
-    const defaultMessage = encodeURIComponent("Bonjour Gold Kitchen, j'aimerais en savoir plus pour un évènement.");
+    const defaultMessage = encodeURIComponent("Bonjour Gold Kitchen, j'aimerais solliciter votre service pour un évènement.");
     const url = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
     els.whatsappBtn.href = url;
   }
