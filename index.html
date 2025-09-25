@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page du service traiteur Gold Kitchen (GK Event) pour le mariage d'Alex & Sandra. Menu, contact WhatsApp, site responsive et élégant.">
+    <title>Gold Kitchen — Mariage Alex & Sandra</title>
+    <!-- Styles principaux -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Préconnexion aux fontes système (pas de fonte externe pour rester simple/rapide) -->
+</head>
+<body>
+    <!-- ===================== PRELOADER ===================== -->
+    <!-- Affiche uniquement le logo pendant le chargement -->
+    <div id="preloader" aria-hidden="true">
+        <img id="preloader-logo" src="/assets/images/Gold_kitchen_logo_update_fond_noir.webp" alt="Logo Gold Kitchen" />
+    </div>
+
+    <!-- ===================== PAGE ===================== -->
+    <header class="hero" role="banner">
+        <div class="hero__logo-wrap">
+            <!-- Le src est défini dynamiquement en JS pour gérer l'extension -->
+            <img id="brand-logo" class="hero__logo" src="/assets/images/Gold_kitchen_logo_update.webp" alt="Logo Gold Kitchen">
+        </div>
+        <h1 class="hero__title">Bienvenue au Mariage d' Alex & Sandra</h1>
+    </header>
+
+    <main id="content" class="content" role="main">
+        <!-- ===================== SECTION MENU ===================== -->
+        <section class="menu" aria-labelledby="menu-title">
+            <div class="container">
+                <h2 id="menu-title" class="menu__title">MENU</h2>
+                <p class="menu__subtitle">Découvrez notre somptueux menu, spécialement concocté pour vous par Gold Kitchen, à l'occasion de l'union d' Alex & Sandra.</p>
+
+                <figure class="menu__figure">
+                    <!-- L'image est injectée de façon robuste par JS (gestion des extensions) -->
+                    <img id="menu-image" class="menu__image" src="/assets/images/AS_Wedding_Menu_version_finale.png" alt="Menu du mariage Alex & Sandra">
+                    <figcaption class="sr-only">Affiche l'image du menu de mariage.</figcaption>
+                </figure>
+
+                <div class="menu__actions">
+                    <a id="download-menu" class="btn btn--ghost" href="/assets/images/AS_Wedding_Menu_version_finale.png" download>
+                        Télécharger le menu
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA WHATSAPP ===================== -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title" class="sr-only">Contact</h2>
+                <a id="whatsapp-cta" class="btn btn--whatsapp" target="_blank" rel="noopener" aria-label="Contactez Gold Kitchen sur WhatsApp">
+                    <span class="btn__icon" aria-hidden="true">
+                        <!-- Icône WhatsApp SVG inline pour un rendu net -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.52 3.48A11.94 11.94 0 0012.013 0C5.393 0 .02 5.373.02 11.992c0 2.112.553 4.142 1.603 5.95L0 24l6.207-1.6a11.95 11.95 0 005.806 1.48h.005c6.62 0 11.993-5.373 11.993-11.992 0-3.207-1.25-6.222-3.49-8.407zM12.018 21.33h-.005a9.31 9.31 0 01-4.74-1.3l-.34-.2-3.682.95.985-3.59-.22-.369a9.31 9.31 0 01-1.42-4.924c0-5.143 4.186-9.33 9.335-9.33a9.27 9.27 0 016.613 2.733 9.27 9.27 0 012.722 6.597c0 5.143-4.187 9.332-9.338 9.332z" fill="currentColor"/>
+                            <path d="M17.2 14.29c-.297-.148-1.76-.867-2.031-.964-.273-.098-.472-.148-.67.148-.199.297-.767.964-.94 1.162-.173.199-.347.223-.643.074-.297-.148-1.254-.462-2.39-1.475-.883-.788-1.479-1.761-1.651-2.058-.173-.297-.018-.458.13-.605.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.099-.199.05-.371-.025-.52-.074-.148-.669-1.614-.916-2.209-.241-.58-.486-.5-.67-.51l-.571-.01c-.198 0-.52.074-.792.371-.273.297-1.04 1.016-1.04 2.48 0 1.463 1.065 2.877 1.213 3.074.148.199 2.095 3.2 5.076 4.488.71.306 1.263.489 1.695.627.712.226 1.36.194 1.872.118.571-.085 1.76-.718 2.01-1.41.248-.69.248-1.281.173-1.41-.074-.129-.272-.198-.57-.346z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span class="btn__label">Contactez Gold Kitchen</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+            <p>© <span id="year"></span> Gold Kitchen — GK Event. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
