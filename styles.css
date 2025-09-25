@@ -78,7 +78,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .menu__figure {
   background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-  /* border: 1px solid var(--color-outline); */
+  border: 1px solid var(--color-outline);
   border-radius: var(--radius);
   padding: 10px; margin: 0 auto; width: var(--container);
   box-shadow: var(--shadow);
