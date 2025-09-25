@@ -88,7 +88,7 @@ img { max-width: 100%; height: auto; display: block; }
 .menu__actions { display: flex; justify-content: center; gap: 12px; margin-top: 16px; }
 
 /* ===================== CTA ===================== */
-.cta { padding: 28px 0 48px; }
+.cta { padding: 28px 0 48px; text-align: center; }
 
 .btn {
   --h: 46px;
